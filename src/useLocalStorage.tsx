@@ -27,5 +27,10 @@ export const useLocalStorage = () => {
     return window.localStorage.clear();
   };
 
-  return { getStorageItem, setStorageItem, removeStorageItem, clearStorage };
+  return {
+    getStorageItem,
+    setStorageItem,
+    removeStorageItem,
+    clearStorage,
+  };
 };
