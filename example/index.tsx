@@ -1,12 +1,16 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../src/useLocalStorage';
+import { useLocalStorage } from '../src/useLocalStorage';
 
 const App = () => {
+  const { setStorageItem } = useLocalStorage();
+
   return (
     <div>
-      <Thing />
+      <button onClick={() => setStorageItem('click', 'me')}>
+        Click`me to set a value on LocalStorage
+      </button>
     </div>
   );
 };
