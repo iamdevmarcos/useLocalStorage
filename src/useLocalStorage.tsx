@@ -1,6 +1,31 @@
-import * as React from 'react';
+export const useLocalStorage = () => {
+  const getStorageItem = (key: string) => {
+    const isClientSide = typeof window === 'object';
+    if (!isClientSide) return;
 
-// Delete me
-export const Thing = () => {
-  return <div>the snozzberries taste like snozzberries</div>;
+    return window.localStorage.getItem(key)!;
+  };
+
+  const setStorageItem = (key: string, value: string) => {
+    const isClientSide = typeof window === 'object';
+    if (!isClientSide) return;
+
+    return window.localStorage.setItem(key, value);
+  };
+
+  const removeStorageItem = (key: string) => {
+    const isClientSide = typeof window === 'object';
+    if (!isClientSide) return;
+
+    return window.localStorage.removeItem(key);
+  };
+
+  const clearStorage = () => {
+    const isClientSide = typeof window === 'object';
+    if (!isClientSide) return;
+
+    return window.localStorage.clear();
+  };
+
+  return { getStorageItem, setStorageItem, removeStorageItem, clearStorage };
 };
