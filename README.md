@@ -1,14 +1,13 @@
 # useLocalStorage
 
 A simple and effective React Hook to manage the localStorage
-<br />
 
 <img
-    height="100%"
-    width="460"
-    alt="hook preview"
-    src="example/img/preview.gif"
-  />
+  height="100%"
+  width="460"
+  alt="hook preview"
+  src="assets/preview.gif"
+/>
 
 ## Links
 
