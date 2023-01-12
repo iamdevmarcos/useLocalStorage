@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -58,7 +58,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-uselocalstorage",
+  "name": "@mendes/uselocalstorage",
   "author": "Marcos Mendes",
   "module": "dist/react-uselocalstorage.esm.js",
   "size-limit": [
