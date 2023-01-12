@@ -6,16 +6,17 @@ A simple and effective React Hook to manage the localStorage
   height="100%"
   width="460"
   alt="hook preview"
-  src="assets/preview.gif"
+  src="https://raw.githubusercontent.com/iamdevmarcos/useLocalStorage/main/assets/preview.gif"
 />
 
 ## Links
 
 - [Github](https://github.com/iamdevmarcos/useLocalStorage)
+- [NPM](https://www.npmjs.com/package/@marcosdev.me/uselocalstorage)
 
 ## Installation
 
-This module is distributed via [npm](https://www.npmjs.com/package/react-screen-size-helper) which is bundled with node and
+This module is distributed via [npm](https://www.npmjs.com/package/@marcosdev.me/uselocalstorage) which is bundled with node and
 should be installed as one of your project's `dependencies`.
 
 ## Important
