@@ -4,12 +4,27 @@ import * as ReactDOM from 'react-dom';
 import { useLocalStorage } from '../src/useLocalStorage';
 
 const App = () => {
-  const { setStorageItem } = useLocalStorage();
+  const { getStorageItem, setStorageItem, removeStorageItem, clearStorage } =
+    useLocalStorage();
 
   return (
     <div>
-      <button onClick={() => setStorageItem('click', 'me')}>
-        Click`me to set a value on LocalStorage
+      <h1>Example:</h1>
+
+      <button onClick={() => setStorageItem('username', 'Marcos Mendes')}>
+        Register username
+      </button>
+      <br />
+      <br />
+
+      <button onClick={() => removeStorageItem('username')}>
+        Remove username
+      </button>
+
+      <hr />
+
+      <button onClick={() => clearStorage()}>
+        Delete all items in localStorage
       </button>
     </div>
   );
