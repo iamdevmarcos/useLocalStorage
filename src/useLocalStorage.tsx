@@ -3,14 +3,15 @@ export const useLocalStorage = () => {
     const isServerSide = typeof window === 'undefined';
     if (isServerSide) return;
 
-    return window.localStorage.getItem(key)!;
+    const data = window.localStorage.getItem(key);
+    return JSON.parse(data!);
   };
 
-  const setStorageItem = (key: string, value: string) => {
+  const setStorageItem = (key: string, value: any) => {
     const isServerSide = typeof window === 'undefined';
     if (isServerSide) return;
 
-    return window.localStorage.setItem(key, value);
+    return window.localStorage.setItem(key, JSON.stringify(value));
   };
 
   const removeStorageItem = (key: string) => {
