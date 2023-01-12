@@ -58,7 +58,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "localstorage-helper",
+  "name": "@marcosdev.me/uselocalstorage",
   "author": "Marcos Mendes",
   "module": "dist/react-uselocalstorage.esm.js",
   "size-limit": [
