@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -60,6 +60,24 @@
   },
   "name": "@marcosdev.me/uselocalstorage",
   "author": "Marcos Mendes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iamdevmarcos/useLocalStorage"
+  },
+  "bugs": {
+    "url": "https://github.com/iamdevmarcos/useLocalStorage/issues"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "frontend",
+    "localstorage",
+    "jsdom",
+    "util",
+    "helper",
+    "observer",
+    "window"
+  ],
   "module": "dist/react-uselocalstorage.esm.js",
   "size-limit": [
     {
